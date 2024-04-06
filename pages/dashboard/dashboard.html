@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-sans bg-slate-300 md:flex">
+    <nav class="bg-slate-800 text-white md:w-44">
+      <ul class="flex flex-row md:flex-col md:text-right">
+        <li>
+          <a href="./index.html" class="block py-2 px-3 md:py-3 md:pr-5">
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block py-2 px-3 active-page md:py-3 md:pr-5"
+            aria-current="page"
+          >
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Issues</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Pages</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Sites</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <main
+      class="p-3 mt-4 grid grid-flow-row auto-rows-max gap-3 md:grid-cols-2 md:mt-0 md:grow lg:grid-cols-4"
+    >
+      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
+      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
+      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
+      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
+    </main>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
