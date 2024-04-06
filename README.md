@@ -5,3 +5,4 @@ Desktop application, powered by ElectronJS, to scan a website and perform automa
 - ElectronJS
 - @axe-core/puppeteer
 - HTML, CSS, JavaScript
+- NodeJS SQLite
