@@ -4,7 +4,8 @@
   "description": "Automated web accessibility checker for desktop with options to check single or multiple pages or crawl entire site.",
   "main": "main.js",
   "scripts": {
-    "dev": "concurrently \"npx tailwindcss -i ./input.css -o ./output.css --watch\" \"electron --trace-warnings .\"",
+    "dev": "electron --trace-warnings .",
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
     "test": "jest"
   },
   "author": "Hojung An",

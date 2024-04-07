@@ -1,5 +1,3 @@
-const path = require("path");
-
 const auditBtn = document.querySelector("#BtnAudit");
 auditBtn.addEventListener("click", (e) => {
   e.preventDefault();

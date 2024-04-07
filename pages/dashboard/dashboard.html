@@ -8,47 +8,75 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../../output.css" />
   </head>
-  <body class="font-sans bg-slate-300 md:flex">
-    <nav class="bg-slate-800 text-white md:w-44">
-      <ul class="flex flex-row md:flex-col md:text-right">
+  <body class="flex font-sans bg-slate-300">
+    <nav class="w-36 bg-slate-700">
+      <ul class="flex flex-col text-right text-white h-screen">
         <li>
-          <a href="./index.html" class="block py-2 px-3 md:py-3 md:pr-5">
-            Home
-          </a>
+          <a href="../../index.html" class="block py-3 px-3"> Home </a>
         </li>
         <li>
           <a
-            href="#"
-            class="block py-2 px-3 active-page md:py-3 md:pr-5"
+            href="./dashboard.html"
+            class="block py-3 px-3 active-page"
             aria-current="page"
           >
             Dashboard
           </a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Issues</a>
+          <a href="#" class="block py-3 px-3">Issues</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Pages</a>
+          <a href="#" class="block py-3 px-3">Pages</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Sites</a>
+          <a href="#" class="block py-3 px-3">Sites</a>
         </li>
-        <li>
-          <a href="#" class="block py-2 px-3 md:py-3 md:pr-5">Settings</a>
+        <li class="mt-auto">
+          <a href="#" class="block py-3 px-3">Settings</a>
         </li>
       </ul>
     </nav>
-    <main
-      class="p-3 mt-4 grid grid-flow-row auto-rows-max gap-3 md:grid-cols-2 md:mt-0 md:grow lg:grid-cols-4"
-    >
-      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
-      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
-      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
-      <div class="bg-white p-3 rounded-md drop-shadow-md">card 1</div>
+    <main class="grow p-3">
+      <h1 class="mb-3 text-xl font-semibold" id="site-name">My Site</h1>
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
+        <boda-card
+          id="level-a"
+          class="bg-white p-5 rounded-md drop-shadow-md text-center"
+          title="Level A Issues"
+          body="123"
+          link="#"
+          linkText="Review A Issues"
+        ></boda-card>
+        <boda-card
+          id="level-aa"
+          class="bg-white p-5 rounded-md drop-shadow-md text-center"
+          title="Level AA Issues"
+          body="123"
+          link="#"
+          linkText="Review AA Issues"
+        ></boda-card>
+        <boda-card
+          id="total-pages"
+          class="bg-white p-5 rounded-md drop-shadow-md text-center"
+          title="Total Pages"
+          body="123"
+          link="#"
+          linkText="View Pages"
+        ></boda-card>
+        <boda-card
+          id="max-depth"
+          class="bg-white p-5 rounded-md drop-shadow-md text-center"
+          title="Max Depth"
+          body="123"
+          link="#"
+          linkText="View Pages"
+        ></boda-card>
+      </div>
     </main>
     <script src="./dashboard.js"></script>
+    <script src="../../components/boda-card.js"></script>
   </body>
 </html>
