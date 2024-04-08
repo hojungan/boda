@@ -586,6 +586,11 @@ video {
   position: relative;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -636,6 +641,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-\[17ch\] {
@@ -833,6 +842,10 @@ nav ul li a:hover {
 @media (min-width: 768px) {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:w-11\/12 {
