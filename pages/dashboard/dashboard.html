@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../../output.css" />
   </head>
   <body class="flex font-sans bg-slate-300">
-    <nav class="bg-slate-700 shrink-0 w-[17ch] md:h-screen">
-      <ul class="flex flex-col text-right text-white h-full">
+    <nav class="bg-slate-700 w-[17ch] shrink-0">
+      <ul class="flex flex-col text-right text-white h-screen">
         <li>
           <a href="../../index.html" class="block py-3 px-3"> Home </a>
         </li>
@@ -34,12 +34,12 @@
         <li>
           <a href="#" class="block py-3 px-3">Sites</a>
         </li>
-        <li class="mt-auto">
+        <li>
           <a href="#" class="block py-3 px-3">Settings</a>
         </li>
       </ul>
     </nav>
-    <main class="p-3 grow">
+    <main class="p-3 pb-0 mx-auto flex flex-col min-w-[300px] w-[1400px]">
       <h1 class="mb-3 text-xl font-semibold" id="site-name">My Site</h1>
       <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
         <boda-card
@@ -76,11 +76,36 @@
         ></boda-card>
       </div>
 
-      <div>
+      <section class="my-5">
         <h2 class="my-3 text-xl font-semibold">Issues</h2>
 
-        <div></div>
-      </div>
+        <div class="rounded-md p-2 overflow-x-auto bg-white">
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th class="border-b border-gray-800 font-normal">Page</th>
+                <th class="border-b border-gray-800 font-normal">A Issues</th>
+                <th class="border-b border-gray-800 font-normal">AA Issues</th>
+                <th class="border-b border-gray-800 font-normal">
+                  Potential Issues
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="border-b border-gray-800 p-3 text-left font-normal">
+                  <a href="#" class="text-blue-700 underline"
+                    >About Us | Toronto District School Board</a
+                  >
+                </th>
+                <td class="border-b border-gray-800 p-3 text-right">12</td>
+                <td class="border-b border-gray-800 p-3 text-right">12</td>
+                <td class="border-b border-gray-800 p-3 text-right">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <script src="./dashboard.js"></script>
     <script src="../../components/boda-card.js"></script>
