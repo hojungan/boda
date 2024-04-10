@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Issues</title>
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body class="flex font-sans bg-slate-300">
+    <nav class="bg-slate-700 w-[17ch] shrink-0">
+      <ul class="flex flex-col text-right text-white h-screen">
+        <li>
+          <a href="../../index.html" class="block py-3 px-3"> Home </a>
+        </li>
+        <li>
+          <a href="./dashboard.html" class="block py-3 px-3"> Dashboard </a>
+        </li>
+        <li>
+          <a
+            href="./issues.html"
+            class="block py-3 px-3 active-page"
+            aria-current="page"
+            >Issues</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block py-3 px-3">Pages</a>
+        </li>
+        <li>
+          <a href="#" class="block py-3 px-3">Sites</a>
+        </li>
+        <li>
+          <a href="#" class="block py-3 px-3">Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="p-3 pb-0 mx-auto flex flex-col min-w-[300px] w-[1400px]">
+      <h1 class="mb-3 text-xl font-semibold" id="site-name">Issues for [sitename]</h1>
+
+      </section>
+    </main>
+    <script src="./dashboard.js"></script>
+    <script src="../../components/boda-card.js"></script>
+  </body>
+</html>
