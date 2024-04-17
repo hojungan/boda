@@ -8,43 +8,36 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../../output.css" />
+    <link rel="stylesheet" href="../../style.css" />
   </head>
   <body class="flex font-sans bg-slate-300">
-    <nav class="bg-slate-700 w-[17ch] shrink-0">
-      <ul class="flex flex-col text-right text-white h-screen">
+    <nav>
+      <ul>
         <li>
-          <a href="../../index.html" class="block py-3 px-3"> Home </a>
+          <a href="../../index.html">Home</a>
         </li>
         <li>
-          <a
-            href="./dashboard.html"
-            class="block py-3 px-3 active-page"
-            aria-current="page"
-          >
-            Dashboard
-          </a>
+          <a href="./dashboard.html" aria-current="page">Dashboard</a>
         </li>
         <li>
-          <a href="../issues/issues.html" class="block py-3 px-3">Issues</a>
+          <a href="../issues/issues.html">Issues</a>
         </li>
         <li>
-          <a href="#" class="block py-3 px-3">Pages</a>
+          <a href="#">Pages</a>
         </li>
         <li>
-          <a href="#" class="block py-3 px-3">Sites</a>
+          <a href="#">Sites</a>
         </li>
         <li>
-          <a href="#" class="block py-3 px-3">Settings</a>
+          <a href="#">Settings</a>
         </li>
       </ul>
     </nav>
-    <main class="p-3 pb-0 mx-auto flex flex-col min-w-[300px] w-[1400px]">
-      <h1 class="mb-3 text-xl font-semibold" id="site-name">My Site</h1>
-      <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
+    <main>
+      <h1 id="site-name">My Site</h1>
+      <div>
         <boda-card
           id="level-a"
-          class="bg-white p-5 rounded-md drop-shadow-md text-center"
           title="Level A Issues"
           body="123"
           link="#"
@@ -52,7 +45,6 @@
         ></boda-card>
         <boda-card
           id="level-aa"
-          class="bg-white p-5 rounded-md drop-shadow-md text-center"
           title="Level AA Issues"
           body="123"
           link="#"
@@ -60,7 +52,6 @@
         ></boda-card>
         <boda-card
           id="total-pages"
-          class="bg-white p-5 rounded-md drop-shadow-md text-center"
           title="Total Pages"
           body="123"
           link="#"
@@ -68,7 +59,6 @@
         ></boda-card>
         <boda-card
           id="max-depth"
-          class="bg-white p-5 rounded-md drop-shadow-md text-center"
           title="Max Depth"
           body="123"
           link="#"
@@ -76,37 +66,31 @@
         ></boda-card>
       </div>
 
-      <section class="my-5">
-        <h2 class="my-3 text-xl font-semibold">Issues</h2>
+      <section>
+        <h2>Issues</h2>
 
-        <div class="rounded-md p-2 overflow-x-auto bg-white">
-          <table class="w-full">
+        <div>
+          <table>
             <thead>
               <tr>
-                <th class="border-b border-gray-800 font-normal">Page</th>
-                <th class="border-b border-gray-800 font-normal">A Issues</th>
-                <th class="border-b border-gray-800 font-normal">AA Issues</th>
-                <th class="border-b border-gray-800 font-normal">
-                  Potential Issues
-                </th>
-                <th class="border-b border-gray-800 font-normal">
-                  Last Audit Date
-                </th>
+                <th>Page</th>
+                <th>A Issues</th>
+                <th>AA Issues</th>
+                <th>Potential Issues</th>
+                <th>Last Audit Date</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th class="border-b border-gray-800 p-3 text-left font-normal">
+                <th>
                   <a href="#" class="text-blue-700 underline"
                     >About Us | Toronto District School Board</a
                   >
                 </th>
-                <td class="border-b border-gray-800 p-3 text-right">12</td>
-                <td class="border-b border-gray-800 p-3 text-right">12</td>
-                <td class="border-b border-gray-800 p-3 text-right">3</td>
-                <td class="border-b border-gray-800 p-3 text-right">
-                  April 1, 2024
-                </td>
+                <td class="text-right">12</td>
+                <td class="text-right">12</td>
+                <td class="text-right">3</td>
+                <td class="text-right">April 1, 2024</td>
               </tr>
             </tbody>
           </table>

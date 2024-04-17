@@ -10,9 +10,9 @@ class BodaCard extends HTMLElement {
 
     const card = document.createElement("div");
     card.innerHTML = `
-      <h2 class="font-bold text-lg">${title}</h2>
-      <p class="text-center text-6xl font-semibold my-4">${body}</p>
-      <a href="${link}" class="text-blue-700">${linkText}</a>
+      <h2>${title}</h2>
+      <p>${body}</p>
+      <a href="${link}">${linkText}</a>
     `;
 
     shadow.appendChild(card);

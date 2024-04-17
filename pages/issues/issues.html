@@ -8,42 +8,39 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Issues</title>
-    <link rel="stylesheet" href="../../output.css" />
+    <link rel="stylesheet" href="../../style.css" />
   </head>
-  <body class="flex font-sans bg-slate-300">
-    <nav class="bg-slate-700 w-[17ch] shrink-0">
-      <ul class="flex flex-col text-right text-white h-screen">
-        <li>
-          <a href="../../index.html" class="block py-3 px-3"> Home </a>
-        </li>
-        <li>
-          <a href="./dashboard.html" class="block py-3 px-3"> Dashboard </a>
-        </li>
-        <li>
-          <a
-            href="./issues.html"
-            class="block py-3 px-3 active-page"
-            aria-current="page"
-            >Issues</a
-          >
-        </li>
-        <li>
-          <a href="#" class="block py-3 px-3">Pages</a>
-        </li>
-        <li>
-          <a href="#" class="block py-3 px-3">Sites</a>
-        </li>
-        <li>
-          <a href="#" class="block py-3 px-3">Settings</a>
-        </li>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+        <li><a href="./issues.html" aria-current="page">Issues</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Sites</a></li>
+        <li><a href="#">Settings</a></li>
       </ul>
     </nav>
-    <main class="p-3 pb-0 mx-auto flex flex-col min-w-[300px] w-[1400px]">
-      <h1 class="mb-3 text-xl font-semibold" id="site-name">Issues for [sitename]</h1>
+    <main>
+      <h1 id="site-name">Issues for [sitename]</h1>
 
+      <section>
+        <h2>Level A Issues</h2>
+
+        <div></div>
+      </section>
+
+      <section class="my-5">
+        <h2>Level AA Issues</h2>
+      </section>
+
+      <section>
+        <h2>Potential Issues</h2>
       </section>
     </main>
     <script src="./dashboard.js"></script>
     <script src="../../components/boda-card.js"></script>
   </body>
 </html>
+</html>
+
