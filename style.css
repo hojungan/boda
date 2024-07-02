@@ -1,0 +1,20 @@
+:root {
+  --blue-100: #96D5ED;
+  --blue-200: #B2E2F6;
+  --blue-300: #A0D5E4;
+  --blue-400: #88C5DB;
+  --blue-500: #66B2CC;
+  --blue-600: #4492B4;
+  --blue-700: #326F87;
+  --blue-800: #224A66;
+  --blue-900: #112E3F;
+  --accent: #D25B99;
+  --dark: #201D1E;
+  --white: #F8F5F1;
+}
+
+html,
+body {
+  background-color: var(--white);
+  font-family: sans-serif;
+}
