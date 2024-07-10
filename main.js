@@ -44,11 +44,11 @@ Menu.setApplicationMenu(mainMenu);
 
 // IPC events
 
-ipcMain.on("crawl", (event, args) => {
+ipcMain.handle("analyze", async (event, args) => {
   const crawl = require("./crawler/crawl");
   const { url, workType } = args;
-  const result = crawl(url, workType);
-  event.reply("crawl-result", result);
+  const result = await crawl(url, workType);
+  return result;
 });
 
 // App Events

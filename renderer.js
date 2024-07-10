@@ -10,7 +10,8 @@ auditBtn.addEventListener("click", async (e) => {
   const url = urlInput.value;
 
   // ipcRenderer is defined in main.js, which is located in src/main.js
-  crawl(url, workType).then((result) => {
-    document.querySelector(".results").innerText = result;
+  ipcRenderer.invoke("analyze", { url, workType }).then((result) => {
+    let violations = result.violations;
+    console.log(violations);
   });
 });
